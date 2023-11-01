@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.cocktail-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.cocktail-card {
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 20px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.cocktail-card img {
+    max-width: 100%;
+}
+
+.cocktail-card .cocktail-info {
+    display: none;
+}
+
+.cocktail-card:hover .cocktail-info {
+    display: block;
+}
+
+.cocktail-card.clicked .cocktail-info {
+    display: block;
+}
+
+.recipe, .calories {
+    display: none;
+}
